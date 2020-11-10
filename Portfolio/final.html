@@ -18,9 +18,32 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="breeds.html">Breeds</a></li>
-            <li class="final"><a href="final.html">Last</a></li>
+            <li class="final"><a href="final.html">Contact</a></li>
           </ul>
         </nav>
     </header>  
+    <form action="https://formspree.io/f/mgepywpg" method="POST">
+      <fieldset>
+        <legend>Contact Me</legend>
+        <label for = 'name_id'>Your Name</label>
+        <input type="text" id ='name_id' placeholder="Enter Your Name" name='Name'>
+    
+        <label for='email_id'> Your Email</label>
+        <input type="email" id='email_id' placeholder='Enter Your Email' name = 'Email'>
+    
+    
+        <label for='phone_id'> Your Phone Number </label>
+        <input type="tel" id='phone_id' name = 'Number' placeholder='123-456-7890' pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}' required>
+    
+    
+        <label for='msg'> Leave A Message</label>
+        <textarea name='msg' id='msg' placeholder='Enter your message' required></textarea>
+        
+        <label for='check'>Remember Me</label>
+        <input type="checkbox" id='check'> 
+      
+        <input type="submit" value='submit' >
+      </fieldset>
+     </form>
     </body>
     </html>
