@@ -426,7 +426,7 @@ input[type=submit]:hover {
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    color: black;
+    color:#242424;
   }
   
   /* Style the back side */
