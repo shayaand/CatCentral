@@ -3,29 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name ='viewport' content ='width=device-width, initial-scale=1.0'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/cat.js"></script>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <title>Cat Central</title>
   </head>
   <body>
-    <a class = "Home" href="#home"></a>
+    <a class = "skip" href="#Home">Skip to Main Content</a>
     <header>
       <img src="images/logo.png" alt="logo" id = "logo">
         <nav>
-          <div class='whole_nav'>
+          <div class='whole_nav'></div>
           <ul class='nav_bar'>
           <li class="home"><a href="#Home">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="breeds.html">Breeds</a></li>
+          <li><a href="api.html">Cat API</a></li>
           <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
     </header>   
-  <main class="about" id="Home" tabindex="0">
+  <main class="about" id="Home">
     <h1>Welcome to Cat Central! </h1>
     <h2>Your one stop shop for everything cats. </h2>
-      <p> Enjoy some cute cat pics! </p>
+      <p> </p>
       <main class= "grid">
               <img id ='image1' src="images/grey-and-white-cat.jpg" class="gallery__img" alt="Image 1">
               <img id ='image2' src="images/relaxing-brown-and-white-tabby.jpg" class="gallery__img" alt="Image 2">
@@ -38,6 +42,27 @@
     <footer>
       <p>Thanks for coming!</p>
     </footer>
+    <script>
+      window.onload = function moveCat() {
+        var width = screen.width;
+        var width = width/2; 
+        var img = document.createElement('img');
+        img.src = 'images/cat_walk.gif';
+        img.id = 'move';
+        document.querySelector("p").appendChild(img);
+        var elem = document.getElementById("move");
+        var pos = -width;
+        var id = setInterval(frame, 5);
+      function frame() {
+        if (pos == width+50) {
+          clearInterval(id);
+      }   else {
+          pos++;
+          elem.style.left = pos + 'px';
+      }
+    }
+  }
+    </script>
   </body>
 </html>
 

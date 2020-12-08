@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name ='viewport' content ='width=device-width, initial-scale=1.0'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/cat.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <title>Cat Central</title>
+  </head>
+  <body>
+    <a class = "skip" href="api.html">Skip to Main Content</a>
+    <header>
+      <img src="images/logo.png" alt="logo" id = "logo">
+        <nav>
+          <div class='whole_nav'></div>
+          <ul class='nav_bar'>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="breeds.html">Breeds</a></li>
+          <li class='api'><a href="api.html">Cat API</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>   
+    <h1> This page utilizes the Cat API.</h1>
+    <p> Generate a random image of a cat. </p>
+    <div id = "kitty">
+        <img id = "randomcat" src="" alt = "randomcat">
+   </div>
+    <button type='button' onclick = "gettingKitty()">Click for a cat!</button>
+    <footer>
+        <p>Thanks for coming!</p>
+      </footer>
+    </body>
+    </html>
+   
