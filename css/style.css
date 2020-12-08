@@ -6,6 +6,10 @@ body{
   background-color: #242424;
 }
 
+#h1_form {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
 .box {
   display: flex;
   align-items: center;
@@ -319,6 +323,10 @@ input[type=submit]:hover {
   #about_h1 {
     padding-top: 80px;
     padding-bottom: 20px;
+  }
+
+  #h1_form {
+    padding-top: 35px;
   }
 
   #about_p {
